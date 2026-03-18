@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detector</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        .box {
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>📰 Fake News Detector</h1>
+
+        <form method="POST">
+            <textarea name="news" rows="5" placeholder="Enter news here..."></textarea><br><br>
+            <button type="submit">Check News</button>
+        </form>
+
+        <h2>{{ result }}</h2>
+    </div>
+</body>
+</html>
